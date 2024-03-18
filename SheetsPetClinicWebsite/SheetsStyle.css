@@ -165,7 +165,7 @@ figure {
     margin-right: 60px;
     margin-bottom: 1em;
     margin-left: 1.5em;
-    border: 3px solid black;
+    border: 2px solid black;
     padding: 10px;
     background-color: white;
     text-align: center;
@@ -182,4 +182,21 @@ p.missionList {
     line-height: 1.5;
 }
 
+img#Dr_Sheets {
+    float: right;
+    padding: 15px;
+    width: 400px;
+}
+
+div.Services {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 30px;
+    background-color: white;
+    align-items: center;
+    line-height: 1.92em;
+
+}
 
