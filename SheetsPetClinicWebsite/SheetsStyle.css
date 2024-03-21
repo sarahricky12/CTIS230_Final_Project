@@ -139,6 +139,7 @@ body {
 
 p {
     margin-left: 20px;
+    line-height: 1.5em;
 }
 
 h3, h2 {
@@ -172,6 +173,10 @@ figure {
     font-style: italic;
 }
 
+figure#examFigure {
+    margin-right: 30px;
+}
+
 img#numberCircle {
     float: left;
     margin-left: 10px;
@@ -192,11 +197,20 @@ div.Services {
     display: flex;
     flex-direction: column;
     border: 2px solid black;
-    padding: 10px;
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin: 30px;
     background-color: white;
     align-items: center;
-    line-height: 1.92em;
+    line-height: 1.9em;
+}
 
+div.serviceInfo {
+    line-height: 1em;
+}
+
+p.serviceHeader {
+    font-weight: bold;
 }
 
