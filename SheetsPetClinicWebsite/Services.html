@@ -5,7 +5,7 @@
     <title>Sheets Pet Clinic</title>
     <link rel="stylesheet" href="SheetsStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="sliderscript.js" defer></script>
+    <script src="ServiceMenuScript" defer></script>
 </head>
 <body>
 
@@ -21,7 +21,7 @@
         <header class="navButton"><a href="Donate.html">Donate</a></header>
     </div>
 
-    <hr>
+
     <h3>Medical</h3>
     
     <p>*Click below on each service to learn more information</p>
@@ -32,7 +32,7 @@
 
         
 
-    <div class = "Services">
+    <div class = "ServiceBox">
         <header class = "serviceName">Wellness Exams & Vaccines</header>
             <div class="serviceInfo">
                 
@@ -56,9 +56,10 @@
 
     <p>*Click below on each section to learn more information</p>
 
-    <div class = "Services">
-        <header class = "serviceName">Admission and Discharge</header>
-            <div class="serviceInfo">
+    <div class = "ServiceBox">
+        <header class = "serviceName" id="serviceName">Admission and Discharge</header>
+            <div class="serviceInfo" id="serviceInfo">
+                <button id="CloseButton">Close</button>
                 <p class = "serviceHeader">General Information</p>
                     <p>Surgery is by appointment only. Surgeries are performed Monday-Friday.</p>
                     <p>Patient check-in on the date of your pet's surgery is from 7:30 am to 8:30 am. Please plan on spending between 30-45 minutes for patient check-in.</p>
@@ -83,17 +84,140 @@
                     <p>Since we are committed to ending homeless pet overpopulation, pregnant feral cats will be spayed.</p>
                     <p>All feral cats will receive an ear tip and tattoo to indicate they have been altered and vaccinated.</p>
             </div>
-        <header class = "serviceName">Pre-Op Care Guidelines</header>
-        <header class = "serviceName">Post-Op Care Guidelines</header>
-            <div class = "moreOptions">
-                <header class = "options">Dogs</header>
-                <header class = "options">Cats</header>
-                <header class = "options">Rabbits</header>
-                <header class = "options">Feral Cats</header>
+
+            <script>
+                document.getElementById("serviceName").addEventListener("click", function(){
+                    document.getElementById("serviceInfo").style.display = "block";
+                });
+
+                document.getElementById("CloseButton").addEventListener("click", function(){
+                    document.getElementById("serviceInfo").style.display = "none";
+                });
+            </script>
+        <header class = "serviceName" id="serviceName2">Pre-Op Care Guidelines</header>
+            <div class="serviceInfo" id="serviceInfo2">
+                <button id="CloseButton2">Close</button>
+                <p>Your pet should sleep indoors overnight the evening before his/her surgery.</p>
+                <p>The night before surgery, remove all food from adult pets (dogs and cats one year or older) no later than midnight. Pets may have water available overnight, and your pet may have a lap or two of water in the morning of the surgery.</p>
+                <p>No guzzling!</p>
+                <p>Removing food and water lessens chances that your adult pet will vomit and aspirate during surgery. Inform the front desk at check-in if your adult pet has eaten the morning of his/her surgery.</p>
+                <p>Puppies and kittens under four months of age may have access to food the evening before surgery, and they have a small amount to eat until 6 am the morning of the surgery.</p>
+                <p>For example, a puppy can have 1/4 his/her regular morning meal of kibble before 6 am the morning of the surgery. A kitten may have a tablespoon of canned food before 6 am the morning of the surgery.</p>
+                <p>Bring your pet’s current vaccination record if you have one. Bring his/her current rabies certificate if you have one. Present these at check-in. A rabies tag is not proof of rabies vaccination. If you have no proof of a rabies vaccination, your pet (if over 16 weeks of age) will receive a one-year rabies vaccination at the time of surgery at an expense of $10.</p>
+                <p>The veterinarian will perform pre-op exam to ensure your pet is eligible for surgery. If your pet is ill or has too much food in his/her stomach, or if the vet has concerns about any other condition that might put your pet at risk under anesthesia, we will ask that you postpone surgery until the illness or condition is resolved.</p>
             </div>
-        <header class = "serviceName">Feral Cat Spay/Neuter Guidelines</header>
-        <header class = "serviceName">Prices</header>
-        <header class = "serviceName">Payment Options</header>
+
+            <script>
+                document.getElementById("serviceName2").addEventListener("click", function(){
+                    document.getElementById("serviceInfo2").style.display = "block";
+                });
+
+                document.getElementById("CloseButton2").addEventListener("click", function(){
+                    document.getElementById("serviceInfo2").style.display = "none";
+                });
+            </script>
+        <header class = "serviceName" id="serviceName3">Post-Op Care Guidelines</header>
+            <div class="serviceInfo" id="serviceInfo3">
+                <button id="CloseButton3">Close</button>
+                <p class = "serviceHeader">Dogs</p>
+                    <p>All postoperative patients must be kept indoors for 7 days. Discourage any running or jumping and limit stair climbing as much as possible. Outdoor dogs may stay in a clean, warm garage if you are able to watch him/her closely there. Keep your postoperative dog quiet and give him/her comfort.</p>
+                    <p>Please leash-walk your dog for 7 days. Do not allow any free roaming.</p>
+                    <p>Check your dog's mucous membrane (gum) color when you arrive home. The mucous membrane color should be a pale pink to red. More importantly, the color must quickly return to normal after applied pressure to the gums (above the canine tooth). Check your dog's color throughout the evening to verify the mucous membrane color returns to normal.</p>
+                    <p>Offer water immediately after returning home. Provide the water in small amounts throughout the evening, watching for vomiting. If your dog takes a large amount of water, he/she will likely vomit. If after 2-3 hours of offering ice chips or small bowls of water there is no vomiting, you may move to free-choice water. Small dogs and puppies 6 months and younger may eat dry food after 10pm, if they are not vomiting water. Resume normal feeding the day after surgery. Generally, a lack of appetite is normal for the first 24 hours post-op. However, your dog must be drinking water. If he/she shows no interest in food or water after 24 hours, contact the clinic. Also contact the clinic if your dog continues to vomit water after 12 hours.</p>
+                    <p>Check your dog's incision daily for redness, swelling, discharge or wound gaping. Some redness and swelling is normal. Contact the clinic if it looks excessive to you. Contact the clinic about any discharge or opening of the incision.</p>
+                    <p>Do not clean the incision - you may introduce infection. The incision needs to remain dry. If it becomes dirty, flush the incision with Saline Solution (contact lens saline solution). Do not bathe your dog for at least 7 days.</p>
+                    <p>Some discomfort 24-36 hours post-op is normal. Your dog should continually improve. He/she should feel better every day.</p>
+                    <p>Your dog has buried sutures, so there is no need for suture removal.</p>
+                    <p>Male dogs remain virile for 3-4 weeks after surgery. Keep them confined.</p>
+                    <p>Female dogs will remain in heat for 7-10 days even after spay surgery. If your pet was in heat do not allow her near any intact male dogs. Do Not trust that a fence will keep a male dog away. She should be watched carefully.</p>
+                    <p>If you feel your dog is in need of pain-relieving medication, please contact the clinic administering any medicines. Some over-the-counter medications can be very dangerous to your dog.</p>
+                <p class = "serviceHeader">Cats</p>
+                    <p>All post-operative patients must be kept indoors for 7 days. Feral cats may stay in a small room (such as a laundry or utility room) for that period. Keep your post-operative cat quiet and give him/her comfort.</p>
+                    <p>Female cats should stay separated from other cats in the household until you are sure they are able to urinate. Pregnant female cats have high precautions for post-op urination. If your cat was pregnant at the time of her spay, please verify that she continues to urinate for several days after surgery.</p>
+                    <p>Check your cat's mucous membrane (gum) color when you arrive home. The mucous membrane color should be a pale pink to red. More importantly, the color must quickly return after applied pressure to the gums (above the canine tooth). Check your cat's color throughout the evening to verify mucous membrane color return.</p>
+                    <p>Offer water immediately after returning home. If your cat is not vomiting, you may offer dry food after 8pm. Resume normal feeding the day after surgery. Generally, a lack of appetite is normal for the first 24 hours post-op. However, your cat must be drinking water. If he/she shows no interest in food or water after 24 hours, contact the clinic. Contact the clinic if your cat continues to vomit water after 12 hours.</p>
+                    <p>Check your cat's incision daily for redness, swelling, discharge or wound gaping. Some redness and swelling is normal. Contact the clinic if it looks excessive to you. Contact the clinic about any discharge or opening of the incision.</p>
+                    <p>Do not clean the incision - you may introduce infection. The incision needs to remain dry. If it becomes dirty, flush the incision with Saline Solution (contact lens saline solution). Do not bathe your cat for at least 7 days.</p>
+                    <p>Some discomfort 24-36 hours post-op is normal. Your cat should continually improve. He/she should feel better every day.</p>
+                    <p>Your female cat has buried sutures, so there is no need for suture removal. Male cats do not require sutures.</p>
+                    <p>Male cats remain virile for 3-4 weeks after surgery. Keep them confined.</p>
+                    <p>If you feel your cat is in need of pain-relieving medication, please contact the clinic before administering any medicines. Some over-the-counter medications can be very dangerous to your cat.</p>
+                <p class = "serviceHeader">Rabbits</p>
+                    <p></p>
+                <p class = "serviceHeader">Feral Cats</p>
+                    <p>Feral cats must be kept indoors in a small room for 7 days post-operatively. Cats may be frantic for a short period of time, but most will look for a location in which they feel secure and settle there. Place the post-operative carrier in the room, open the door and leave the room.If housing for 7 days is not possible, they must be kept inside at least over night before releasing.Food can be dropped into the trap</p>
+                    <p>Provide a small box or plastic container in a corner/out of the way area without a lid from which you can visually observe the cat.</p>
+                    <p>Line it with clean towel for the cat.</p>
+                    <p>Remember that cats prefer to just fit in their bed.</p>
+                    <p>Kept in large crates, cats will often sleep in the litter box creating an opportunity for infection.</p>
+                    <p>Do not leave the cat carrier in the room during the recovery period. When you are ready to release the cat, replace the bed/box in the room with the carrier with the carrier door open and a towel inside. Put the carrier out of the way and near where the cat has been sleeping. Move in and out of the room - do so even if the cat is in the carrier - several times, moving gradually closer to the carrier. When you can get very close to the carrier without the cat moving out of it, close the carrier door.</p>
+                    <p>Feral cats will huddle in a small area. Signs of postoperative problems will not be obvious.</p>
+                    <p>Keep cats on white or light-colored towels so you can see any external bleeding.</p>
+                    <p>Watch food intake closely - lack of interest in food, especially after days with a good appetite can signal a problem.</p>
+                    <p>Clean the litter box often - once daily at a minimum. The cat should urinate at least once daily. Lack of urine production, especially in female cats, can indicate a problem</p>
+                    <p>Become familiar with the cat's 'energy level'. In most cases, a feral cat will not move when you are nearby; however, he/she will be watching closely.</p>
+                    <p>If the cat's attention to you when you are nearby seems less energetic or his/her eyes seem less bright/attentive, contact the clinic for support.</p>
+                    <p>If you can touch the cat (formerly untouchable) and the cat feels cool to the touch, (especially female cats) he/she could be in trouble.</p>
+                    <p>If the cat's third eyelid is visible (and does not move back after awaking, etc), this is also a sign of distress.</p>
+            </div>
+
+            <script>
+                document.getElementById("serviceName3").addEventListener("click", function(){
+                    document.getElementById("serviceInfo3").style.display = "block";
+                });
+
+                document.getElementById("CloseButton3").addEventListener("click", function(){
+                    document.getElementById("serviceInfo3").style.display = "none";
+                });
+            </script>
+
+        <header class = "serviceName" id="serviceName4">Feral Cat Spay/Neuter Guidelines</header>
+            <div class="serviceInfo" id="serviceInfo4">
+            <button id="CloseButton4">Close</button>
+
+            </div>
+
+            <script>
+                document.getElementById("serviceName4").addEventListener("click", function(){
+                    document.getElementById("serviceInfo4").style.display = "block";
+                });
+
+                document.getElementById("CloseButton4").addEventListener("click", function(){
+                    document.getElementById("serviceInfo4").style.display = "none";
+                });
+            </script>
+        <header class = "serviceName" id="serviceName5">Prices</header>
+            <div class="serviceInfo" id="serviceInfo5">
+            <button id="CloseButton5">Close</button>
+            <p>*Due to economic instability, prices are subject to change without notice.  To receive most accurate pricing, please call 336-852-8488.</p>
+
+            </div>
+
+            <script>
+                document.getElementById("serviceName5").addEventListener("click", function(){
+                    document.getElementById("serviceInfo5").style.display = "block";
+                });
+
+                document.getElementById("CloseButton5").addEventListener("click", function(){
+                    document.getElementById("serviceInfo5").style.display = "none";
+                });
+            </script>
+        <header class = "serviceName" id="serviceName6">Payment Options</header>
+            <div class="serviceInfo" id="serviceInfo6">
+            <button id="CloseButton6">Close</button>
+            <p>So we can continue to give all our patients a high level of care, payment is expected in full when pet discharged or services rendered. Sheets Pet Clinic accepts cash, check, VISA, Mastercard, Discover, and debit cards.</p>
+            <p>Since our prices are already reduced, we have no financial assistance plan. Please check Resources on this site for some possibilities for financial assistance with veterinary bills.</p>
+            </div>
+
+            <script>
+                document.getElementById("serviceName6").addEventListener("click", function(){
+                    document.getElementById("serviceInfo6").style.display = "block";
+                });
+
+                document.getElementById("CloseButton6").addEventListener("click", function(){
+                    document.getElementById("serviceInfo6").style.display = "none";
+                });
+            </script>
     </div>
 
     <hr>
