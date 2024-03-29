@@ -35,6 +35,10 @@ ol li {
     cursor: pointer;
 }
 
+h4 {
+    text-align: center;
+}
+
 .content {
     width: 60%;
     color: #dadada;
@@ -148,6 +152,14 @@ figure#examFigure {
     margin-right: 30px;
 }
 
+figure#groomFigure {
+    float: none;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 img#numberCircle {
     float: left;
     margin-left: 10px;
@@ -162,6 +174,83 @@ img#Dr_Sheets {
     float: right;
     padding: 15px;
     width: 400px;
+}
+
+img#Cheri {
+    padding: 10px;
+    width: 350px;
+}
+
+img#boardingImage1 {
+    width: 300px;
+    border: 3px solid black;
+    float: left;
+    margin: 20px;
+}
+
+img#boardingImage2 {
+    width: 250px;
+    border: 3px solid black;
+    float: right;
+    margin: 20px;
+}
+
+img#galleryIMG {
+    width: 300px;
+    border: 3px solid black;
+    margin: 20px;
+}
+
+img#feralCatIMG {
+    width: 300px;
+    border: 3px solid black;
+    margin: 20px;
+    float: left;
+}
+
+img#feralCatSurgery {
+    width: 250px;
+    border: 3px solid black;
+    margin: 20px;
+    float: right;
+}
+
+img#feralCatTrap {
+    width: 250px;
+    border: 3px solid black;
+    margin: 20px;
+    float: left;
+}
+
+img#client {
+    width: 350px;
+    border: 3px solid black;
+    margin: 20px;
+    float: left;
+}
+
+h4#ContactH4 {
+    text-align: left;
+    margin: 20px;
+}
+div.hours {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    margin: 30px;
+    background-color: white;
+    line-height: 1.9em;
+}
+
+div.days {
+    width: 50%;
+    text-align: center;
+}
+
+div.times {
+    width: 50%;
+    text-align: center;
+    background-color:rgb(178, 218, 255)
 }
 
 div.ServiceBox {
