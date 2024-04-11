@@ -21,6 +21,69 @@
         <header class="navButton"><a href="Donate.html">Donate</a></header>
     </div>
 
+    <script>
+        var img = document.getElementById('logoIMG');
+        img.onclick = function() {
+            window.location.href = 'Home.html';
+            img.style.cursor = 'pointer';
+        }
+        
+        img.style.cursor = 'pointer';
+        
+    </script>
+
+    <h2>Donate</h2>
+
+    <hr>
+
+    <div class="donateType">
+
+        <div class="Clinic">
+            <h3>Donate to the Clinic</h3>
+            <script src="https://www.paypal.com/sdk/js?client-id=BAAFo5QPfEdGvpqOjqBbCdP5HYAXZs60nfu_Y8xwncJt3PXGginoszufQDknjRVt5-98x8noHBct93-5rk&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+<div id="paypal-container-W486UADLW2H24"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "W486UADLW2H24",
+  }).render("#paypal-container-W486UADLW2H24")
+</script>
+        </div>
+
+        <div class="Feral">
+            <h3>Donate to the Feral Cat Fund</h3>
+            <div class="gfm-embed" data-url="https://www.gofundme.com/f/tsp9d-sheets-feral-cat-fund/widget/large?sharesheet=CAMPAIGN_PAGE"></div>
+            <script defer src="https://www.gofundme.com/static/js/embed.js"></script>
+        </div>
+
+        <div class="Amazon">
+            <h3>Donate from Amazon Wish List</h3>
+            <div class="AmazonImgButton">
+                <img id="AmazonDonateIMG" src="images/AmazonWishlist.jpg" alt="Amazon Donate IMG">
+                <button id="AmazonDonateButton">Donate</button>
+            </div>
+        </div>
+
+        <script>
+            var amazonButton = document.getElementById('AmazonDonateButton');
+            amazonButton.onclick = function() {
+                window.location.href = 'https://www.amazon.com/gp/registry/wishlist/XQ64XQ22B8S6';
+                }
+
+                amazonButton.style.cursor = 'pointer';
+
+        </script>
+
+    </div>
+
 </body>
+
+<hr>
+
+    <div class="footer">
+        <footer class="content2">Sheets Pet Clinic</footer>
+        <footer class="content2">Last Modified: 4/10/2024</footer>
+        <footer class="content2">Contact: <a href= "mailto:sheetspetclinic@aol.com">sheetspetclinic@aol.com</a> | (336)-852-8488</footer>
+        <footer class="content2">© 2024 Sheets Pet Clinic</footer>
+    </div>
 </html>
 

@@ -21,24 +21,70 @@
         <header class="navButton"><a href="Donate.html">Donate</a></header>
     </div>
 
-    <h3>Sheets Pet Clinic Cat Adoptions</h3>
+    <script>
+        var img = document.getElementById('logoIMG');
+        img.onclick = function() {
+            window.location.href = 'Home.html';
+            img.style.cursor = 'pointer';
+        }
+        img.style.cursor = 'pointer';
+    </script>
+    
+    <a id="PetFinderLogo" href="https://www.petfinder.com"><img src="https://www.petfinder.com//banner-images/widgets/41.jpg" border="0" alt="Petfinder Logo - 159 by 39 - Petfinder.com" /></a>
+    <h2 id="AdoptionHeader">Sheets Pet Clinic Cat Adoptions</h2>
     <p>Sheets Pet Clinic normally holds adoption fairs on the second and fourth Saturdays of every month from 1-4 pm at the clinic. We host meet and greets by appointment with approved applicants.</p>
     <img id="client" src="images/client2.jpg"> 
     <p>Dr. Sheets’ dream from a child has been to end the pet overpopulation problem, in particular to cats, since cats breed much more prolifically than dogs.  She is particularly devoted to the welfare of feral street cats and supports the TNR strategy for caring for managed colonies.</p>
     <p>When a kitten or cat from a feral colony seems adoptable, that animal may go into the Sheets Cat Adoption Program. S/he will be tested for FeLV and/or FIV, sterilized, microchipped, vaccinated, dewormed, and treated for fleas.</p>
     <p>Between the years of 2014 and 2020, Sheets Pet Clinic cat adoptions found homes for over 1,000 kittens and cats.</p>
-    <p>For adoption inquires or to learn how to be a foster home, email - petadoptions@sheetspetclinic.com</p>
+    <p>For adoption inquires or to learn how to be a foster home, email - <a href= "mailto:petadoptions@sheetspetclinic.com">petadoptions@sheetspetclinic.com</a></p>
     <p>Please donate to Sheets Cat Adoptions.</p>
     <p>You may donate in memory of or in honor of a pet or person.</p>
     <hr>
-    <h4>Adoption Application Form</h4>
 
-    <iframe
-        src="images/Adoption-Application.pdf"
-        width="100%"
-        height="600px"
-    ></iframe>
+    
+    <h3>Adoption Application Form</h3>
+
+    <div class = "adoptionForm">
+        <iframe id="AdoptionForm"
+            src="images/Adoption-Application.pdf"
+            width="80%"
+            height="600px"
+        ></iframe>
+    </div>
+
+    <hr>
+    <h3>Sheets Pet Clinic Petfinder</h3>
+    <br>
+    
+    
+    <pet-scroller
+    type='[]'
+    age='[]'
+    limit="24"
+    
+    status="adoptable"
+    petlisttitle="Sheets Pet Clinic&#x27;s Adoptable Pets"
+    organization="NC661"
+    apibase="https://api.petfinder.com"
+    petfinderurl="https://www.petfinder.com"
+    accesstoken="eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJtd1NmUDQ1SEpPckFSS0RkVGM1M3JGSjNHVTJIdnk0SUxVSGR5Y3NnNGpURzRCVHIzdCIsImp0aSI6ImdKMmFUMHl6cUtXMUk0Mm1aS3hVZllLNEZxQlpBVUVwRTRKdUdPUUMiLCJpYXQiOjE3MTI3NjI0NTcsIm5iZiI6MTcxMjc2MjQ1NywiZXhwIjo0ODY4NDM2MDU3LCJzdWIiOiIyNzYwMzU1Iiwic2NvcGVzIjpbXX0.zOpZCvjz0kDF7lutyXaozVdPE1edA85SLJs7UgRvUModmVoNjMSZYVu1G6HR7NgYX1_6YX0RZMS0yVQfGXMgzkwHiAOr8F-puBKZTZLkzSUp7wXLmliNFMCOfO_ZXCOgd91P1iSbQBB8nSnrrOExJ__Jn-SlWdG4Vwu85LT4-hcIpQpLBXCibMb8H4QfwECW6m-CYUp8qv7XJEIjLvTtTupMunpsIJRhp128KehlWQ-lTAZWiX_GR31FVLeS7GXtapxW4C3IjG08UH2cwQZWaKxOIMzQYAeLFfM-7Qeg0OVoV3uiGGAs5cK8i1cfVNzBtoSTzGH6JBPWSJWOKaDpXw">
+    </pet-scroller>
+
+    <script src="https://www.petfinder.com/assets/widgets/scripts/main-widgets-web.js"></script>
+   
+    
 
 </body>
+
+<hr>
+
+    <div class="footer">
+        <footer class="content2">Sheets Pet Clinic</footer>
+        <footer class="content2">Last Modified: 4/10/2024</footer>
+        <footer class="content2">Contact: <a href= "mailto:sheetspetclinic@aol.com">sheetspetclinic@aol.com</a> | (336)-852-8488</footer>
+        <footer class="content2">© 2024 Sheets Pet Clinic</footer>
+    </div>
+
 </html>
 

@@ -21,7 +21,17 @@
         <header class="navButton"><a href="Donate.html">Donate</a></header>
     </div>
 
+    <script>
+        var img = document.getElementById('logoIMG');
+        img.onclick = function() {
+            window.location.href = 'Home.html';
+            img.style.cursor = 'pointer';
+        }
+        img.style.cursor = 'pointer';
+    </script>
 
+    <h2>Services</h2>
+    <hr>
     <h3>Medical</h3>
     
     <p>*Click below on each service to learn more information</p>
@@ -33,20 +43,180 @@
         
 
     <div class = "ServiceBox">
-        <header class = "serviceName">Wellness Exams & Vaccines</header>
-            <div class="serviceInfo">
+        <header class = "serviceName" id="serviceName7">Wellness Exams & Vaccines</header>
+            <div class="serviceInfo" id="serviceInfo7">
+                <button id="CloseButton7">Close</button>
+                <p>Sheets Pet Clinic believes routine preventative care is crucial in keeping your pet healthy and discovering health issues as soon as possible. Dogs and cats should be current on core vaccines. A discussion about your pet’s lifestyle with our medical team may find other diseases that your pet is at increased risk for and vaccinations in addition to core vaccines would be recommended. Any animals going outside should be provided flea and tick control products and inside animals benefit from flea prevention as we can bring fleas inside to our pets. Dogs and cats are susceptible to life threatening disease from heartworm infection spread by mosquitoes. Even indoor animals can be bitten by mosquitos that have come inside by an open window or door.</p>
+            </div>
+
+            <script>
+                document.getElementById("serviceName7").addEventListener("click", function(){
+                    document.getElementById("serviceInfo7").style.display = "block";
+                });
+
+                document.getElementById("CloseButton7").addEventListener("click", function(){
+                    document.getElementById("serviceInfo7").style.display = "none";
+                });
+            </script>
+
+        <header class = "serviceName" id="serviceName8">Dental Care</header>
+            <div class="serviceInfo" id="serviceInfo8">
+                <button id="CloseButton8">Close</button>
+                <p>Managing your pet’s dental health is an important component in helping your pet live a comfortable, healthy life. Dental disease causes not only infection, but pain as well. Animals continue to eat in spite of significant oral pain. Just because a pet is eating does not mean he is not in pain. Cats have some unique, but common dental problems. Feline resorptive lesions allow cats to feel painful stimuli as the protective enamel is missing. These lesions can be quite small and even below the gum line making detection difficult. Cats also get immune-mediated gingivitis and stomatitis causing severe inflammation and pain. During routine yearly physical examination many of these and additional dental issues can be detected and a plan of action created to help your pet live a healthier more comfortable life. Dental cleanings are best done before significant dental disease is present. Cleanings are recommended any time the calculus reaches the gum line causing inflammation and pain. If cleaning is not done at this early stage periodontal disease will advance causing significant pain and ultimately tooth loss. If your pet has advanced dental disease it is in significant pain and the infection in the mouth also affects other parts of the body. Removal of painful and compromised teeth is necessary to alleviate pain and help get infection in the mouth resolved. If your pet has not been seen for an annual exam and you have concerns about their dental health you can schedule a predental exam where your pet’s dental health as well as overall health will be discussed and evaluated. Pet’s cannot be scheduled for a dental procedure without an annual exam or a predental exam. Many animals with significant dental disease or other underlying issues will need to start a predental antibiotic prior to the procedure. Animals over 7 years of age will need preanesthetic blood work performed or on file before anesthesia. It is recommended all animals have preanesthetic blood work prior to the dental procedure, but not required for animals under 7 that appear in good health. However, animals can look healthy and have underlying disease present. Preanesthetic blood work also helps establish a baseline should your pet ever become sick. We can compare the blood work back to the baseline to better see changes. 
+</p>
+            </div>
+
+            <script>
+                document.getElementById("serviceName8").addEventListener("click", function(){
+                    document.getElementById("serviceInfo8").style.display = "block";
+                });
+
+                document.getElementById("CloseButton8").addEventListener("click", function(){
+                    document.getElementById("serviceInfo8").style.display = "none";
+                });
+            </script>
+        <header class = "serviceName" id="serviceName9">Senior Care</header>
+            <div class="serviceInfo" id="serviceInfo9">
+                <button id="CloseButton9">Close</button>
+                <p>Making sure our companions are well cared for and comfortable in their golden years is extremely important. Often older animals are seen as getting slower to get up or have less energy because they are “getting older”, but in fact they are in pain. Most dogs develop degenerative joint disease otherwise known as arthritis at some point in their lives. Due to confirmation issues (which can be breed related) some dogs can suffer from this at an early age. We have many tools for managing the pain of arthritis with some promising new treatments as well. Cats suffer from osteoarthritis also and may hide this better than their canine counterparts. We offer routine lab work to help find problems sooner. Early detection allows us to better manage these diseases giving your pet an improved quality of life and more time to enjoy with your family.</p>
                 
             </div>
-        <header class = "serviceName">Dental Care</header>
-        <header class = "serviceName">Senior Care</header>
-        <header class = "serviceName">Pain Management</header>
-        <header class = "serviceName">Full Lab Services</header>
-        <header class = "serviceName">In-House Pharmacy</header>
-        <header class = "serviceName">Soft Tissue Removals</header>
-        <header class = "serviceName">Minor Orthopedic Surgery</header>
-        <header class = "serviceName">Heartworm Treatment</header>
-        <header class = "serviceName">Microchipping</header>
-        <header class = "serviceName">Declawing</header>
+
+            <script>
+                document.getElementById("serviceName9").addEventListener("click", function(){
+                    document.getElementById("serviceInfo9").style.display = "block";
+                });
+
+                document.getElementById("CloseButton9").addEventListener("click", function(){
+                    document.getElementById("serviceInfo9").style.display = "none";
+                });
+            </script>
+        <header class = "serviceName" id="serviceName10">Pain Management</header>
+            <div class="serviceInfo" id="serviceInfo10">
+                <button id="CloseButton10">Close</button>
+                <p>We have a stewardship responsibility to make sure we are managing our pets’ comfort and quality of life. Many chronic disease processes like osteoarthritis can be managed well with the tools we have available for control of pain and inflammation. We offer pharmaceutical aid in the form of NSAIDS created for our canines’ sensitive systems. We recommend proven nutritional supplements to help with pain and inflammation as well. Our clinic also uses laser therapy to improve healing on the cellular level as well as Adequan injections to improve synovial fluid. Now we have a new tool which uses monoclonal antibody technology to target a major source of inflammation causing progressive disease. One injection monthly is allowing our arthritic patients to move with more mobility and less pain. This technology is also available for our feline patients that have had fewer options for long term pain control.</p>
+                
+            </div>
+
+            <script>
+                document.getElementById("serviceName10").addEventListener("click", function(){
+                    document.getElementById("serviceInfo10").style.display = "block";
+                });
+
+                document.getElementById("CloseButton10").addEventListener("click", function(){
+                    document.getElementById("serviceInfo10").style.display = "none";
+                });
+            </script>
+        <header class = "serviceName" id="serviceName11">Full Lab Services</header>
+            <div class="serviceInfo" id="serviceInfo11">
+                <button id="CloseButton11">Close</button>
+                <p>While we offer many tests in house we have access to a multitude of tests with our partnership with Idexx. Many results are available the next day or within a few business days.</p>
+                
+            </div>
+
+            <script>
+                document.getElementById("serviceName11").addEventListener("click", function(){
+                    document.getElementById("serviceInfo11").style.display = "block";
+                });
+
+                document.getElementById("CloseButton11").addEventListener("click", function(){
+                    document.getElementById("serviceInfo11").style.display = "none";
+                });
+            </script>
+        <header class = "serviceName" id="serviceName12">In-House Pharmacy</header>
+            <div class="serviceInfo" id="serviceInfo12">
+                <button id="CloseButton12">Close</button>
+                <p>When our pets are sick we want to know as soon as possible how best to treat them. Having an In-house pharmacy where we can get results in an hour or less allows us to quickly move forward with a tailored treatment plan for that individual and can often provide us with a diagnosis quickly. We can monitor a patient’s changes throughout the day in real time.</p>
+                
+            </div>
+
+            <script>
+                document.getElementById("serviceName12").addEventListener("click", function(){
+                    document.getElementById("serviceInfo12").style.display = "block";
+                });
+
+                document.getElementById("CloseButton12").addEventListener("click", function(){
+                    document.getElementById("serviceInfo12").style.display = "none";
+                });
+            </script>
+        <header class = "serviceName" id="serviceName13">Soft Tissue Removals</header>
+            <div class="serviceInfo" id="serviceInfo13">
+                <button id="CloseButton13">Close</button>
+                <p>Pets commonly have growths especially as they age. Some masses are benign and may not need removal. Some benign masses may need to be removed if your pet is licking or chewing the site or ruptures such as the case of sebaceous cysts. Removing malignant masses when they are small can be a lifesaver. Many tumors are only locally aggressive and slow to metastasize to other areas of the body. If the tumor gets large it may not be possible to remove the tumor in its entirety and it will grow back. Masses should be sent to a pathologist who will look at the tissue microscopically to identify the tumor type, the rate of growth and whether clean surgical margins were attained. </p>
+                
+            </div>
+
+            <script>
+                document.getElementById("serviceName13").addEventListener("click", function(){
+                    document.getElementById("serviceInfo13").style.display = "block";
+                });
+
+                document.getElementById("CloseButton13").addEventListener("click", function(){
+                    document.getElementById("serviceInfo13").style.display = "none";
+                });
+            </script>
+        <header class = "serviceName" id="serviceName14">Minor Orthopedic Surgery</header>
+            <div class="serviceInfo" id="serviceInfo14">
+                <button id="CloseButton14">Close</button>
+                <p>Currently not available.</p>
+            </div>
+
+            <script>
+                document.getElementById("serviceName14").addEventListener("click", function(){
+                    document.getElementById("serviceInfo14").style.display = "block";
+                });
+
+                document.getElementById("CloseButton14").addEventListener("click", function(){
+                    document.getElementById("serviceInfo14").style.display = "none";
+                });
+            </script>
+        <header class = "serviceName" id="serviceName15">Heartworm Treatment</header>
+            <div class="serviceInfo" id="serviceInfo15">
+                <button id="CloseButton15">Close</button>
+                <p>Our clinic treats dogs that have adult heartworms. The positive dog is started on a month of antibiotics to kill a bacteria associated with the heartworm. They also start on monthly prevention to prevent any new infections from starting. Once they have completed the doxycycline and have received three monthly doses of heartworm preventative they can start the adulticide treatment. An arsenic compound is injected into the deep muscles over the back and the animal is monitored the rest of the day. The dog is sent home on prednisone for inflammation created when the worms start dying and pain medication for the soreness from the injection. It is essential that the dog stays quiet 30 days after the injection. If the heart is beating excessively fast the dog is at increased risk for developing a fatal thromboembolism. The first injection kills nearly all the male worms (they are smaller) and a small percentage of the female worms. This death of only some of the worms allows the body to deal with the dying worm burden and is much safer for the dog. In one month the dog returns for two injections 24 hours apart and will spend the night between the injections. Again the dog will go home on pain medication and prednisone and must stay inactive for 30 more days. The treatment is hard on the dog, but can prevent more serious complications from allowing the adult worms to continue to inhabit the dog. The treatment is also expensive. It is much better to prevent heartworm disease with a monthly preventative than it is to have to inject your pet with arsenic to kill adult heartworms. Heartworms are endemic in the Southeast and spread by mosquitoes. Your dog does not have to have contact with another dog to become infected. Cats are also susceptible to heartworm disease and should be protected with monthly prevention. </p>
+                
+            </div>
+
+            <script>
+                document.getElementById("serviceName15").addEventListener("click", function(){
+                    document.getElementById("serviceInfo15").style.display = "block";
+                });
+
+                document.getElementById("CloseButton15").addEventListener("click", function(){
+                    document.getElementById("serviceInfo15").style.display = "none";
+                });
+            </script>
+        <header class = "serviceName" id="serviceName16">Microchipping</header>
+            <div class="serviceInfo" id="serviceInfo16">
+                <button id="CloseButton16">Close</button>
+                <p>All pets should be protected by microchipping. The procedure is quick and can be done without anesthesia (although we do offer a discount for microchipping when animals are asleep for spay/neuter surgery). Most cats do not wear collars with owner identification. Even dogs wearing collars with an ID tag may slip out of their collar when they become lost. Microchipping your pet is your best chance for getting them back if they are found with no identification tag. The pet will receive a tag with the microchip that can be placed on the collar. The information kept by the microchip company can include alternate contacts in case you can’t be reached by one on an ID tag. The microchip tag also lets finders know that your pet is permanently identified should you need to prove ownership.</p>
+                <p>Look at microchipping like you do house/car insurance. The hope is that you will never need it, but if you do it can be a life saver.</p>
+            </div>
+
+            <script>
+                document.getElementById("serviceName16").addEventListener("click", function(){
+                    document.getElementById("serviceInfo16").style.display = "block";
+                });
+
+                document.getElementById("CloseButton16").addEventListener("click", function(){
+                    document.getElementById("serviceInfo16").style.display = "none";
+                });
+            </script>
+        <header class = "serviceName" id="serviceName17">Declawing</header>
+            <div class="serviceInfo" id="serviceInfo17">
+                <button id="CloseButton17">Close</button>
+                <p>There are many personal reasons why an owner may need to have their pet declawed, which may include immunocompromised individuals in the household that cannot risk infection from scratches, people in the home on blood thinners, or pets with a condition that causes self trauma, injury or disease of the nails, or other pets in the household that could be fatally injured by the bacteria on the nails of the cats. </p>
+            </div>
+
+            <script>
+                document.getElementById("serviceName17").addEventListener("click", function(){
+                    document.getElementById("serviceInfo17").style.display = "block";
+                });
+
+                document.getElementById("CloseButton17").addEventListener("click", function(){
+                    document.getElementById("serviceInfo17").style.display = "none";
+                });
+            </script>
     </div>
 
     <br>
@@ -132,18 +302,18 @@
                     <p>Female dogs will remain in heat for 7-10 days even after spay surgery. If your pet was in heat do not allow her near any intact male dogs. Do Not trust that a fence will keep a male dog away. She should be watched carefully.</p>
                     <p>If you feel your dog is in need of pain-relieving medication, please contact the clinic administering any medicines. Some over-the-counter medications can be very dangerous to your dog.</p>
                 <p class = "serviceHeader">Cats</p>
-                    <p>All post-operative patients must be kept indoors for 7 days. Feral cats may stay in a small room (such as a laundry or utility room) for that period. Keep your post-operative cat quiet and give him/her comfort.</p>
-                    <p>Female cats should stay separated from other cats in the household until you are sure they are able to urinate. Pregnant female cats have high precautions for post-op urination. If your cat was pregnant at the time of her spay, please verify that she continues to urinate for several days after surgery.</p>
-                    <p>Check your cat's mucous membrane (gum) color when you arrive home. The mucous membrane color should be a pale pink to red. More importantly, the color must quickly return after applied pressure to the gums (above the canine tooth). Check your cat's color throughout the evening to verify mucous membrane color return.</p>
+                    <p>All postoperative patients must be kept indoors for 7 days. Feral cats may be very stressed to stay inside and would be better off being released into their familiar surroundings the day following surgery. But, if a cat is released it will be hard to help it if there are any surgical complications. So, if you have a small room indoors (like a bathroom) and the cat will eat daily it should stay inside during the postoperative period.</p>
+                    <p>Female cats should be monitored for normal urination after surgery. This may be easier to accomplish if the cat is isolated with its own litter box until it passes urine. The ureters, which take urine from the kidneys to the bladder, lie close to the base of the uterus. It is an extremely rare complication for the ureters to become compromised in the removal of the uterus, but not impossible. Therefore monitoring female cats post operatively for normal urination is advised. Pregnancy at the time of surgery raises this risk, but is still an extremely rare occurrence.</p>
+                    <p>Check your cat's mucous membrane (gum) color when you arrive home. The mucous membrane color should be a pale pink to dark pink. More importantly, the color should  return after removing pressure applied to the gums (above the canine tooth) within 1-2 seconds. Check your cat's color throughout the evening to verify mucous membrane color return.</p>
                     <p>Offer water immediately after returning home. If your cat is not vomiting, you may offer dry food after 8pm. Resume normal feeding the day after surgery. Generally, a lack of appetite is normal for the first 24 hours post-op. However, your cat must be drinking water. If he/she shows no interest in food or water after 24 hours, contact the clinic. Contact the clinic if your cat continues to vomit water after 12 hours.</p>
-                    <p>Check your cat's incision daily for redness, swelling, discharge or wound gaping. Some redness and swelling is normal. Contact the clinic if it looks excessive to you. Contact the clinic about any discharge or opening of the incision.</p>
-                    <p>Do not clean the incision - you may introduce infection. The incision needs to remain dry. If it becomes dirty, flush the incision with Saline Solution (contact lens saline solution). Do not bathe your cat for at least 7 days.</p>
+                    <p>Check your cat's incision daily for redness, swelling, discharge or wound gaping. Some redness and swelling is normal. Many female cats will produce a lot of granulation tissue in response to the internal sutures. This tissue is very firm and usually in the area just at the incision. If there is soft swelling it could be an accumulation of tissue fluid (a seroma) that can usually be managed at home, but we would prefer to check the incision to make sure everything is ok. Surgical rechecks are free. Contact the clinic about any discharge or opening of the incision.</p>
+                    <p>Do not clean the incision - you may introduce infection. The incision needs to remain dry. If it becomes dirty, flush the incision with Wound Saline Solution (available at most drug and grocery stores). Do not bathe your cat for at least 7 days.</p>
                     <p>Some discomfort 24-36 hours post-op is normal. Your cat should continually improve. He/she should feel better every day.</p>
                     <p>Your female cat has buried sutures, so there is no need for suture removal. Male cats do not require sutures.</p>
                     <p>Male cats remain virile for 3-4 weeks after surgery. Keep them confined.</p>
-                    <p>If you feel your cat is in need of pain-relieving medication, please contact the clinic before administering any medicines. Some over-the-counter medications can be very dangerous to your cat.</p>
+                    <p>If you feel your cat is in need of additional pain-relieving medication, please contact the clinic before administering any medicines. Some over-the-counter medications can be very dangerous for your cat.</p>
                 <p class = "serviceHeader">Rabbits</p>
-                    <p></p>
+                    <p>Food and water should be made available once the rabbit is fully awake. Your rabbit should be fully awake when it is picked up. Keep the rabbit in a clean area to help prevent infection at the surgery site. Monitor the incision daily for any drainage, swelling, or opening. Monitor your rabbit carefully to make sure it is not chewing on the incision site. If they are chewing at the incision they will need a small comfortable e-collar to wear that is rabbit safe. The incisions should be healed completely by 10-14 days after surgery.</p>
                 <p class = "serviceHeader">Feral Cats</p>
                     <p>Feral cats must be kept indoors in a small room for 7 days post-operatively. Cats may be frantic for a short period of time, but most will look for a location in which they feel secure and settle there. Place the post-operative carrier in the room, open the door and leave the room.If housing for 7 days is not possible, they must be kept inside at least over night before releasing.Food can be dropped into the trap</p>
                     <p>Provide a small box or plastic container in a corner/out of the way area without a lid from which you can visually observe the cat.</p>
@@ -174,6 +344,7 @@
         <header class = "serviceName" id="serviceName4">Feral Cat Spay/Neuter Guidelines</header>
             <div class="serviceInfo" id="serviceInfo4">
             <button id="CloseButton4">Close</button>
+            <p>Feral cats are cats that have reverted back to a wild state (do not allow people to handle them). They are not social stray cats. Feral cats must come in a humane trap to receive the feral cat rate. Feral cats that come in carriers or crates will be charged the regular spay/neuter rates. This is because feral cats receive an injection through the trap bars to sedate them so they can be anesthetized for surgery. We have trap dividers to make the space in the trap smaller so they can be sedated easier with less stress to the cat. Feral cats must be ear tipped for identification as a sterilized cat to receive the feral cat rate. Any cats that are not ear tipped do not receive the feral cat rate. The removal of the tip of the ear is done while the cat is under anesthesia for surgery and allows people from a distance to see that the cat has already been fixed. Once trapped the cat trap should be covered with a sheet or towel to remove visual stimulation that will make the cat more reactive and taken to a quiet safe area until transported to the clinic. Many cats can become quite agitated in the trap and will run against the door with great force or try to force their way under the door. Some of these cats will work so hard to get out of the trap that they can create bloody skinned places on their face or feet. These places will heal and the cat should not be released until it has been altered and vaccinated for rabies. Although rabies is the only vaccine required by law, it is highly recommended to vaccinate for panleukopenia. Panleukopenia is a parvovirus of cats with almost 100% fatality rate if infected. It can persist in the environment for years. Panleukopenia outbreaks in shelters cause widespread death and often force shelters to depopulate and shut down for a period of time. Panleukopenia is the “P” in the FVRCP vaccine and protection can be achieved by one dose of a modified live vaccine in felines over 4 months of age. If you trap a cat that is nursing kittens please tell the desk staff as these cats are prioritized for early surgery time so that they can quickly be released back to their kittens. Normally kittens can go 24-36 hours without mom. It is recommended that feral cats remain in a  comfortable climate the night after surgery as they do not regulate their body temperature normally after surgery. The exception would be a nursing mom who can be released once anesthesia is completely worn off. You should not attempt to handle or move a trapped cat from the trap. If you should get bitten the cat will need to be quarantined for rabies observation for 10 days. If the cat is not quarantined you will need to go to the hospital for rabies post exposure immunoglobulin injections and start rabies vaccines. Rabies is 99% fatal in people. Once a person has clinical signs of rabies it is too late to be saved. Therefore, be very careful when trapping and returning cats so that you do not get bitten.</p>
 
             </div>
 
@@ -230,16 +401,15 @@
     
 
     <hr>
-    <h3>Boarding</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <img id = "boardingImage1" src = "images/boarding1.jpg" alt = "Boarding Image">
     <img id = "boardingImage2" src = "images/boarding2.jpg" alt = "Boarding Image">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+    <h3>Boarding</h3>
+    <br>
+    <p>The clinic boards both canines and felines in separate areas. Dogs are walked in a fenced area 2-3 times daily and are fed according to owner instructions. Cats are not taken outside and can be housed in a large cage with a housemate if preferred. Owners should supply the pets food for their stay as most animals have less gastrointestinal upset if they stay on their regular diet. Some animals do not eat well when boarded so it is ok to bring some treats they like to add to their food.</p>    
+<br>
+<br>
+<br>
+<br>
     <hr>
     <h3>Boarding Form</h3>
     <iframe
@@ -249,5 +419,14 @@
     ></iframe>
 
 </body>
+
+<hr>
+
+    <div class="footer">
+        <footer class="content2">Sheets Pet Clinic</footer>
+        <footer class="content2">Last Modified: 4/10/2024</footer>
+        <footer class="content2">Contact: <a href= "mailto:sheetspetclinic@aol.com">sheetspetclinic@aol.com</a> | (336)-852-8488</footer>
+        <footer class="content2">© 2024 Sheets Pet Clinic</footer>
+    </div>
 </html>
 

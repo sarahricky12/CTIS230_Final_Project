@@ -33,7 +33,17 @@ ol li {
     width: 15px;
     height: 15px;
     cursor: pointer;
+    justify-content: center;
 }
+
+ol li#firstCircle {
+    background: rgb(19, 19, 207);
+}
+
+.imageChange:hover {
+    background:  rgb(19, 19, 207);
+}
+
 
 h4 {
     text-align: center;
@@ -182,24 +192,24 @@ img#Cheri {
 }
 
 img#boardingImage1 {
-    width: 300px;
+    width: 200px;
     border: 3px solid black;
     float: left;
     margin: 20px;
 }
 
 img#boardingImage2 {
-    width: 250px;
+    width: 200px;
     border: 3px solid black;
     float: right;
     margin: 20px;
 }
 
-img#galleryIMG {
+/* img#galleryIMG {
     width: 300px;
     border: 3px solid black;
     margin: 20px;
-}
+} */
 
 img#feralCatIMG {
     width: 300px;
@@ -289,3 +299,302 @@ button{
     margin-top: 10px;
     margin-right: 10px;
 }
+
+div.donateType {
+    display: flex;
+}
+
+div.GoogleMap {
+    width: 60%;
+    margin-right: 30px;
+}
+
+div.GoogleMap2 {
+    width: 70%;
+    margin-right: 30px;
+}
+
+div.HomeInfo {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(20, 1, 88);
+    width: 100%
+}
+
+div.HomeInfo2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(20, 1, 88);
+    width: 100%
+}
+
+div.Labels {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin-right: 11%;
+    color: #dadada;
+}
+
+div.Labels3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 64%;
+    font-style: italic;
+    margin-left: 15%;   
+}
+
+div.Facebook {
+    margin-left: 8%;
+}
+
+div.LabelsVisitUs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    color: #dadada;
+    font-style: italic;
+}
+
+div.HoursOffice {
+    margin-right: 9em;
+}
+
+div.HoursMap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+div.HoursMap2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+div.hours {
+    width: 40%;
+}
+
+div.AddressInfo {
+    width: 25%;
+    margin-left: 3%;
+    color: #dadada;
+}
+
+h2#VisitLabel {
+    background-color: rgb(20, 1, 88);
+    color: #dadada;
+    font-style: italic;
+}
+
+div#FeralDonate {
+    width: 60%;
+    padding-top: 30px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+}
+
+div.OnlineForms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+div.FormLabels {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 60%;
+    font-style: italic;
+}
+
+div.AdoptionLabel {
+    margin-right: -5%;
+}
+
+div.FormPDFs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+div.BoardingForm {
+    width: 50%;
+}
+
+div.AdoptionForm {
+    width: 50%;
+}
+
+
+div.ContactHours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.Labels2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 58%;
+    font-style: italic;
+}
+
+div.Info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.adoptionForm {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+a#PetFinderLogo {
+    float: right;
+    padding: 15px;
+}
+
+h2#AdoptionHeader {
+    margin-left: 11%;
+}
+
+blockquote.instagram-media {
+    float: right;
+    margin-right: 6%;
+    margin-left: 2%;
+    width: 50%;
+}
+
+iframe#Facebook {
+    float: left;
+    margin-top: 20px;
+    padding-bottom: 40px;
+    width: 50%;
+    margin-left: 6%;
+}
+
+
+/* Donate Page */
+div.donateType {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.Clinic {
+    width:33%;
+    padding: 10px;
+    background-color: white;
+}
+
+div.Feral {
+    width: 33%;
+    padding: 10px;
+    background-color: rgb(19, 19, 207);
+}
+
+div.Amazon {
+    width: 33%;
+    padding: 10px;
+    background-color: white;
+}
+
+div.AmazonImgButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Feral h3 {
+    color: white;
+}
+
+img#AmazonDonateIMG {
+    width: 100%;
+}
+
+button#AmazonDonateButton {
+   background-color: #FF9900;
+   text-align: center;
+   font-weight: bold;
+   font-size: 16px;
+   padding: 15px 90px;  
+    border-radius: 12px; 
+    border: none;
+
+}
+
+button#AmazonDonateButton:hover {
+    background-color: #ffb94f;
+}
+
+.footer {
+    text-align: center;
+    font-size: .9em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*Gallery Section*/
+div.IMGgallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.gallery {
+    margin: 5px;
+    height: auto;
+    width: 200px;
+  }
+
+  div.gallery img:hover {
+    border: 2px solid  rgb(19, 19, 207);
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+  } 
+
+  /*Testimonials Section*/
+  p.Testominal {
+    font-family: Times, Times New Roman, serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  p.User {
+    font-family: Times, Times New Roman, serif;
+    text-align: center;
+  }
+
